@@ -4,32 +4,64 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgba(254, 255, 214, 0.6);
+}
+
 div.container {
+  position: relative;
+
   width: 100%;
   height: 100vh;
-
   overflow: hidden;
 }
 
 div.container > div.navigation-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 100%);
-  grid-template-rows: repeat(2, 100vw);
-
+  grid-template-columns: repeat(2, 1250px);
+  grid-template-rows: repeat(2, 950px);
+  
+  cursor: move;
 }
 
-div.container > div.navigation-wrapper > div:nth-child(1) {
-  background-color: black;
+div.container > div.navigation-wrapper > div {
+  position: relative;
 }
 
-div.container > div.navigation-wrapper > div:nth-child(2) {
-  background-color: red;
+/** ============ CONTENT ========== */
+div.content {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+
+  z-index: 1;
+
+  cursor: pointer;
 }
 
-div.container > div.navigation-wrapper > div:nth-child(3) {
-  background-color: yellow;
+
+/** ============ MODAL ========== */
+.modal-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-div.container > div.navigation-wrapper > div:nth-child(4) {
-  background-color: blue;
+.modal-wrapper.__hide {
+  display: none;
+}
+
+.modal-wrapper > div.modal {
+  width: 640px;
+  height: 360px;
 }
