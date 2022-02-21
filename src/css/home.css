@@ -18,8 +18,8 @@ div.container {
 
 div.container > div.navigation-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1250px);
-  grid-template-rows: repeat(2, 950px);
+  grid-template-columns: repeat(4, 1400px);
+  grid-template-rows: repeat(3, 1400px);
   
   cursor: move;
 }
