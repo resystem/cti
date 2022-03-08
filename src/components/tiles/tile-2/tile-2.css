@@ -1,3 +1,107 @@
 .tile.__2 {
   background-image: url("https://cti-assets.s3.us-west-2.amazonaws.com/bg/desktop/bg-2.jpg");
 }
+
+.tile {
+  border: dashed 1px;
+  background-size: 100% 100%;
+}
+
+.tile.__2 {
+  position: relative;
+  background-image: url("https://cti-assets.s3.us-west-2.amazonaws.com/bg/desktop/bg-1.jpg");
+}
+
+/* illustrations */
+
+.tile.__2 > .illustration.__1 {
+  width: 250px;
+  
+  position: absolute;
+  top: 110px;
+  left: 20px;
+
+  cursor: pointer;
+}
+
+.tile.__2 > .illustration.__2 {
+  width: 100px;
+  
+  position: absolute;
+  top: 280px;
+  left: 290px;
+
+  cursor: pointer;
+}
+
+.tile.__2 > .illustration.__3 {
+  width: 400px;
+  
+  position: absolute;
+  top: 220px;
+  right: 30px;
+
+  cursor: pointer;
+}
+
+.tile.__2 > .illustration.__4 {
+  width: 350px;
+  
+  position: absolute;
+  bottom: -100px;
+  left: 180px;
+  z-index: 1;
+
+  cursor: pointer;
+}
+
+/* gifs */
+
+.tile.__2 > .gif.__2 {
+  width: 400px;
+  
+  position: absolute;
+  top: 600px;
+  right: 150px;
+
+  cursor: pointer;
+}
+
+.tile.__2 > .gif.__2 {
+  width: 570px;
+  
+  position: absolute;
+  bottom : 0;
+  left: calc(35% - 275px);
+
+  cursor: pointer;
+}
+
+/* videos */
+
+.tile.__2 > .video {
+  position: absolute;
+  cursor: pointer;
+}
+
+.tile.__2 > .video.__2 {
+  bottom: 240px;
+  left: -100px;
+}
+
+.tile.__2 > .video.__2 > .thumb-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.tile.__2 > .video.__2 > .thumb-wrapper > .play {
+  position: absolute;
+
+  width: 50px;
+}
+
+.tile.__2 > .video.__2 > .thumb-wrapper > .thumb {
+  width: 700px;
+}
