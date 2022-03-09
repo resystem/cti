@@ -3,7 +3,6 @@ import './tile-4.css'
 
 const Tile4 = () => (
   <div className="tile __4">
-
     <div className='video __1'>
       <div className="thumb-wrapper">
         <img draggable="false" className="thumb" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/film-thumbnail/filme6_MoaKaaguy_pb.png" />

@@ -1,3 +1,92 @@
+.tile {
+  border: dashed 1px;
+  background-size: 100% 100%;
+}
+
 .tile.__5 {
   background-image: url("https://cti-assets.s3.us-west-2.amazonaws.com/bg/desktop/bg-5.jpg");
+}
+
+/* illustrations */
+
+.tile.__5 > .illustration.__1 {
+  width: 500px;
+  
+  position: absolute;
+  top: -100px;
+  right: 20px;
+
+  cursor: pointer;
+}
+
+.tile.__5 > .illustration.__2 {
+  width: 500px;
+  
+  position: absolute;
+  bottom: 30%;
+  left: 10px;
+  z-index: 1;
+
+  cursor: pointer;
+}
+
+.tile.__5 > .illustration.__3 {
+  width: 400px;
+  
+  position: absolute;
+  bottom: -10%;
+  right: 30%;
+
+  cursor: pointer;
+}
+
+/* videos */
+
+.tile.__5 > .video {
+  position: absolute;
+  cursor: pointer;
+}
+
+.tile.__5 > .video.__1 {
+  top: 110px;
+  left: 60px;
+}
+
+.tile.__5 > .video.__1 > .thumb-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.tile.__5 > .video.__1 > .thumb-wrapper > .play {
+  position: absolute;
+
+  width: 50px;
+}
+
+.tile.__5 > .video.__1 > .thumb-wrapper > .thumb {
+  width: 700px;
+}
+
+.tile.__5 > .video.__2 {
+  width: 300px;
+  bottom: 34%;
+  left: 28%;
+  z-index: 1;
+}
+
+.tile.__5 > .video.__2 > .thumb-wrapper > .thumb {
+  width: 250px;
+}
+
+.tile.__5 > .video.__2 > .thumb-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile.__5 > .video.__2 > .thumb-wrapper > .play {
+  position: absolute;
+  width: 50px;
 }
