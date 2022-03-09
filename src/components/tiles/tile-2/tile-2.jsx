@@ -3,12 +3,8 @@ import './tile-2.css'
 
 const Tile2 = () => (
   <div className="tile __2">
-
-    <img draggable="false" className="illustration __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/illustrations/Kerexu_IMG_8902.png" />
-
-    <img draggable="false" className="illustration __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/illustrations/desenhos-AraPoty9.jpg" />
     
-    <img draggable="false" className="illustration __3" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/illustrations/desenho-Sophia12.jpg" />
+    <img draggable="false" className="illustration __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/illustrations/desenho-Sophia12.jpg" />
 
     <div className='video __2'>
       <div className="thumb-wrapper">
@@ -17,7 +13,7 @@ const Tile2 = () => (
       </div>
     </div>
 
-    <img draggable="false" className="illustration __4" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/illustrations/desenhos-AraPoty11.jpg" />
+    <img draggable="false" className="illustration __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/illustrations/desenhos-AraPoty11.jpg" />
   </div>
 );
 
