@@ -1,3 +1,60 @@
+.tile {
+  border: dashed 1px;
+  background-size: 100% 100%;
+}
 .tile.__7 {
   background-image: url("https://cti-assets.s3.us-west-2.amazonaws.com/bg/desktop/bg-7.jpg");
+}
+
+/* illustrations */
+
+.tile.__7 > .illustration.__1 {
+  width: 280px;
+  
+  position: absolute;
+  top: 50px;
+  right: 10px;
+
+  cursor: pointer;
+}
+
+.tile.__7 > .illustration.__2 {
+  width: 400px;
+  
+  position: absolute;
+  bottom: 20%;
+  left: 15px;
+
+  cursor: pointer;
+}
+
+.tile.__7 > .illustration.__3 {
+  width: 400px;
+  
+  position: absolute;
+  top: 20%;
+  left: 35%;
+
+  cursor: pointer;
+}
+
+.tile.__7 > .illustration.__4 {
+  width: 480px;
+  
+  position: absolute;
+  bottom: 18%;
+  right: 50px;
+
+  cursor: pointer;
+}
+
+.tile.__7 > .illustration.__5 {
+  width: 230px;
+  
+  position: absolute;
+  bottom: -100px;
+  right: 30%;
+  z-index: 1;
+
+  cursor: pointer;
 }
