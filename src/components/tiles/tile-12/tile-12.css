@@ -1,3 +1,42 @@
+.tile {
+  border: dashed 1px;
+  background-size: 100% 100%;
+}
+
 .tile.__12 {
   background-image: url("https://cti-assets.s3.us-west-2.amazonaws.com/bg/desktop/bg-12.jpg");
+}
+
+/* illustrations */
+
+.tile.__12 > .illustration.__1 {
+  width: 400px;
+  
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  
+  cursor: pointer;
+}
+
+.tile.__12 > .illustration.__2 {
+  width: 400px;
+  
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  
+  cursor: pointer;
+}
+
+/* gifs */
+
+.tile.__12 > .photo.__1 {
+  width: 350px;
+  
+  position: absolute;
+  bottom: 21%;
+  left: -5%;
+
+  cursor: pointer;
 }
