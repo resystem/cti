@@ -1,3 +1,61 @@
+.tile {
+  border: dashed 1px;
+  background-size: 100% 100%;
+}
+
 .tile.__11 {
   background-image: url("https://cti-assets.s3.us-west-2.amazonaws.com/bg/desktop/bg-11.jpg");
+}
+
+/* illustrations */
+
+.tile.__11 > .illustration.__1 {
+  width: 400px;
+  
+  position: absolute;
+  top: -150px;
+  left: -100px;
+  
+  cursor: pointer;
+}
+
+.tile.__11 > .illustration.__2 {
+  width: 380px;
+  
+  position: absolute;
+  bottom: 20px;
+  right: 25%;
+  z-index: 1;
+  
+  cursor: pointer;
+}
+
+/* videos */
+
+.tile.__11 > .video {
+  position: absolute;
+  cursor: pointer;
+}
+
+.tile.__11 > .video.__1 {
+  top: 60px;
+  left: 32%;
+
+  z-index: 2;
+}
+
+.tile.__11 > .video.__1 > .thumb-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile.__11 > .video.__1 > .thumb-wrapper > .thumb {
+  width: 250px;
+}
+
+.tile.__11 > .video.__1 > .thumb-wrapper > .play {
+  position: absolute;
+
+  width: 50px;
 }
