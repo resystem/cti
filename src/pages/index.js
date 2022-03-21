@@ -1,6 +1,7 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import Hammer from 'react-hammerjs';
 import ContentModal from '../components/content-modal/content-modal';
+import VideoPlayer from '../components/video-player/video-player';
 import Tile1 from '../components/tiles/tile-1/tile-1';
 import Tile2 from '../components/tiles/tile-2/tile-2';
 import Tile3 from '../components/tiles/tile-3/tile-3';
@@ -133,6 +134,7 @@ const IndexPage = () => {
           </div>
         </Hammer>
       </div>
+      <VideoPlayer />
       <ContentModal
         hide={!openedContent}
         backgroundColor={openedContent?.backgroundColor}
