@@ -1,5 +1,6 @@
-import React, { useLayoutEffect, useState } from 'react'
+import React, { useContext, useLayoutEffect, useState } from 'react'
 import Hammer from 'react-hammerjs';
+import { actions, ModalsContext } from '../store';
 import ContentModal from '../components/content-modal/content-modal';
 import VideoPlayer from '../components/video-player/video-player';
 import Tile1 from '../components/tiles/tile-1/tile-1';
@@ -18,6 +19,7 @@ import Seo from '../components/seo'
 import '../css/home.css';
 
 const IndexPage = () => {
+  const { state, dispatch } = useContext(ModalsContext);
   const [openedContent, setOpenedContent] = useState(null);
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
@@ -76,7 +78,7 @@ const IndexPage = () => {
     if (zoom === 1) return;
     setZoom(zoom - zoomStep)
   }
-  
+
   return (
     <>
       <Seo title="Home" />
@@ -119,7 +121,7 @@ const IndexPage = () => {
               willChange: 'transform',
             }}
           >
-            <Tile1 />
+            <Tile1 state={state} dispatch={dispatch} />
             <Tile2 />
             <Tile3 />
             <Tile4 />
@@ -134,7 +136,19 @@ const IndexPage = () => {
           </div>
         </Hammer>
       </div>
-      <VideoPlayer />
+      {
+        state.video ? (
+          <VideoPlayer
+            video={state.video}
+            setVideo={(data) => {
+              dispatch({
+                type: actions.SET_VIDEO,
+                data,
+              });
+            }}
+          />
+        ) : null
+      }
       <ContentModal
         hide={!openedContent}
         backgroundColor={openedContent?.backgroundColor}

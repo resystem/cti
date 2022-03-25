@@ -1,0 +1,19 @@
+.video-wrapper {
+  position: absolute;
+  cursor: pointer;
+}
+
+.video-wrapper > video {
+  background-color: #000000;
+}
+
+.video-wrapper > .thumb-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-wrapper > .thumb-wrapper > .play {
+  position: absolute;
+  width: 50px;
+}
