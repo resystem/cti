@@ -8,11 +8,11 @@ const IndexPage = () => {
   useEffect(() => {
     dispatch({
       type: actions.SET_LANGUAGE,
-      data: 'pt',
+      data: 'es',
     });
   }, []);
   
-  return <Layout language="pt" />;
+  return <Layout language="es" />;
 };
 
 export default IndexPage;

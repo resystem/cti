@@ -4,12 +4,14 @@ export const actions = {
   SET_VIDEO: 'SET_VIDEO',
   SET_AUDIO: 'SET_AUDIO',
   SET_TEXT: 'SET_TEXT',
+  SET_LANGUAGE: 'SET_LANGUAGE',
 };
 
 const initialState = {
   audio: null,
   video: null,
   text: null,
+  language: 'pt',
 };
 
 const reducer = (state, action) => {
@@ -20,6 +22,8 @@ const reducer = (state, action) => {
       return { ...state, audio: action.data };
     case actions.SET_TEXT:
       return { ...state, text: action.data };
+    case actions.SET_LANGUAGE:
+      return { ...state, language: action.data };
     default:
       throw 'Invalid action type';
   }

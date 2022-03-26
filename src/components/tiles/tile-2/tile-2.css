@@ -52,29 +52,11 @@
 
 /* videos */
 
-.tile.__2 > .video {
-  position: absolute;
-  cursor: pointer;
+.tile.__2 > .video-wrapper.__1 > .thumb-wrapper > .thumb {
+  width: 700px;
 }
 
-.tile.__2 > .video.__2 {
+.tile.__2 > .video-wrapper.__1 {
   bottom: 240px;
   left: -100px;
-}
-
-.tile.__2 > .video.__2 > .thumb-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.tile.__2 > .video.__2 > .thumb-wrapper > .play {
-  position: absolute;
-
-  width: 50px;
-}
-
-.tile.__2 > .video.__2 > .thumb-wrapper > .thumb {
-  width: 700px;
 }

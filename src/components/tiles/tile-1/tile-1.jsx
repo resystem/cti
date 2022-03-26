@@ -3,15 +3,26 @@ import { actions } from '../../../store';
 import VideoWrapper from '../../video/video';
 import './tile-1.css'
 
+const video1 = {
+  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+  en: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+  es: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+};
+
+const video2 = {
+  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+  en: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+  es: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+};
+
 const Tile1 = ({ state, dispatch }) => (
   <div className="tile __1">
     <img draggable="false" className="illustration __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/illustrations/desenho-Sophia05.jpg" />
-
     <VideoWrapper
       id="__1"
       video={state.video}
       thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/film-thumbnail/filme+1_Nhemongarai+BATISMO+DA+ALMA_pb.png"
-      src="https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4"
+      src={video1[state.language]}
       setVideo={(data) => {
         dispatch({
           type: actions.SET_VIDEO,
@@ -23,7 +34,7 @@ const Tile1 = ({ state, dispatch }) => (
     <VideoWrapper
       id="__2"
       thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/film-thumbnail/depoimento1_frame_pb.png"
-      src="https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4"
+      src={video2[state.language]}
       video={state.video}
       setVideo={(data) => {
         dispatch({

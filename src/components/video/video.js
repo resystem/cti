@@ -16,6 +16,7 @@ const VideoWrapper = ({ setVideo, video, id, thumbnail, src}) => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
+    console.log([imageRef.current])
     setWidth(imageRef.current?.offsetWidth);
     setHeight(imageRef.current?.offsetHeight);
   }, []);
@@ -45,7 +46,6 @@ const VideoWrapper = ({ setVideo, video, id, thumbnail, src}) => {
           </video>
         ) : (
           <div
-            ref={imageRef}
             className="thumb-wrapper"
             onClick={() => {
               setShowing(true);
@@ -58,7 +58,12 @@ const VideoWrapper = ({ setVideo, video, id, thumbnail, src}) => {
               }, [200]);
             }}
           >
-            <img draggable="false" className="thumb" src={thumbnail} />
+            <img
+              draggable="false"
+              className="thumb"
+              src={thumbnail}
+              ref={imageRef}
+            />
             <svg className="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff"
             >
               <path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/>
