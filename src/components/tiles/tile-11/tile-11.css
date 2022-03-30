@@ -31,30 +31,12 @@
 
 /* videos */
 
-.tile.__11 > .video {
-  position: absolute;
-  cursor: pointer;
-}
-
-.tile.__11 > .video.__1 {
-  top: 60px;
-  left: 32%;
-
-  z-index: 2;
-}
-
-.tile.__11 > .video.__1 > .thumb-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tile.__11 > .video.__1 > .thumb-wrapper > .thumb {
+.tile.__11 > .video-wrapper.__1 > .thumb-wrapper > .thumb {
   width: 250px;
 }
 
-.tile.__11 > .video.__1 > .thumb-wrapper > .play {
-  position: absolute;
-
-  width: 50px;
+.tile.__11 > .video-wrapper.__1 > {
+  top: 60px;
+  left: 32%;
+  z-index: 2;
 }
