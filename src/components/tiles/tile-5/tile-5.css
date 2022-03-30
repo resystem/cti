@@ -41,51 +41,22 @@
 
 /* videos */
 
-.tile.__5 > .video {
-  position: absolute;
-  cursor: pointer;
+.tile.__5 > .video-wrapper.__1 > .thumb-wrapper > .thumb {
+  width: 700px;
 }
 
-.tile.__5 > .video.__1 {
+.tile.__5 > .video-wrapper.__1 {
   top: 110px;
   left: 60px;
 }
 
-.tile.__5 > .video.__1 > .thumb-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.tile.__5 > .video-wrapper.__2 > .thumb-wrapper > .thumb {
+  width: 250px;
 }
 
-
-.tile.__5 > .video.__1 > .thumb-wrapper > .play {
-  position: absolute;
-
-  width: 50px;
-}
-
-.tile.__5 > .video.__1 > .thumb-wrapper > .thumb {
-  width: 700px;
-}
-
-.tile.__5 > .video.__2 {
+.tile.__5 > .video-wrapper.__2 {
   width: 300px;
   bottom: 34%;
   left: 28%;
   z-index: 1;
-}
-
-.tile.__5 > .video.__2 > .thumb-wrapper > .thumb {
-  width: 250px;
-}
-
-.tile.__5 > .video.__2 > .thumb-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tile.__5 > .video.__2 > .thumb-wrapper > .play {
-  position: absolute;
-  width: 50px;
 }
