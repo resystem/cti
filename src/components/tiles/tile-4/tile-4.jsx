@@ -9,6 +9,10 @@ const video1 = {
   es: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
 };
 
+const video2 = {
+  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+};
+
 const Tile4 = ({ state, dispatch }) => (
   <div className="tile __4">
     <VideoWrapper
@@ -34,7 +38,7 @@ const Tile4 = ({ state, dispatch }) => (
       id="__2"
       video={state.video}
       thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/film-thumbnail/depoimento4_frame_pb.png"
-      src={video1[state.language]}
+      src={video2[state.language]}
       setVideo={(data) => {
         dispatch({
           type: actions.SET_VIDEO,
