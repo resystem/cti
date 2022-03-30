@@ -1,14 +1,28 @@
 import React from 'react'
+import { actions } from '../../../store';
+import VideoWrapper from '../../video/video';
 import './tile-4.css'
 
-const Tile4 = () => (
+const video1 = {
+  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+  en: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+  es: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+};
+
+const Tile4 = ({ state, dispatch }) => (
   <div className="tile __4">
-    <div className='video __1'>
-      <div className="thumb-wrapper">
-        <img draggable="false" className="thumb" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/film-thumbnail/filme6_MoaKaaguy_pb.png" />
-        <svg className="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>
-      </div>
-    </div>
+    <VideoWrapper
+      id="__1"
+      video={state.video}
+      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/film-thumbnail/filme6_MoaKaaguy_pb.png"
+      src={video1[state.language]}
+      setVideo={(data) => {
+        dispatch({
+          type: actions.SET_VIDEO,
+          data,
+        })
+      }}
+    />
 
     <img draggable="false" className="illustration __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/illustrations/not-found.png" />
 
@@ -16,12 +30,18 @@ const Tile4 = () => (
 
     <img draggable="false" className="illustration __3" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/illustrations/forma_2.png" />
 
-    <div className='video __2'>
-      <div className="thumb-wrapper">
-        <img draggable="false" className="thumb" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/film-thumbnail/depoimento4_frame_pb.png" />
-        <svg className="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>
-      </div>
-    </div>
+    <VideoWrapper
+      id="__2"
+      video={state.video}
+      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/film-thumbnail/depoimento4_frame_pb.png"
+      src={video1[state.language]}
+      setVideo={(data) => {
+        dispatch({
+          type: actions.SET_VIDEO,
+          data,
+        })
+      }}
+    />
 
   </div>
 );

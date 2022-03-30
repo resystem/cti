@@ -41,50 +41,21 @@
 
 /* videos */
 
-.tile.__4 > .video {
-  position: absolute;
-  cursor: pointer;
+.tile.__4 > .video-wrapper.__1 > .thumb-wrapper > .thumb {
+  width: 700px;
 }
 
-.tile.__4 > .video.__1 {
+.tile.__4 > .video-wrapper.__1 {
   top: 400px;
   left: 60px;
 }
 
-.tile.__4 > .video.__1 > .thumb-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.tile.__4 > .video-wrapper.__2 > .thumb-wrapper > .thumb {
+  width: 250px;
 }
 
-
-.tile.__4 > .video.__1 > .thumb-wrapper > .play {
-  position: absolute;
-
-  width: 50px;
-}
-
-.tile.__4 > .video.__1 > .thumb-wrapper > .thumb {
-  width: 700px;
-}
-
-.tile.__4 > .video.__2 {
-  width: 300px;
+.tile.__4 > .video-wrapper.__2 {
   bottom: 200px;
   right: 200px;
 }
 
-.tile.__4 > .video.__2 > .thumb-wrapper > .thumb {
-  width: 250px;
-}
-
-.tile.__4 > .video.__2 > .thumb-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tile.__4 > .video.__2 > .thumb-wrapper > .play {
-  position: absolute;
-  width: 50px;
-}
