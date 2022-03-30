@@ -32,30 +32,12 @@
 
 /* videos */
 
-.tile.__9 > .video {
-  position: absolute;
-  cursor: pointer;
-}
-
-.tile.__9 > .video.__1 {
-  top: 10%;
-  right: 20%;
-
-  z-index: 2;
-}
-
-.tile.__9 > .video.__1 > .thumb-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tile.__9 > .video.__1 > .thumb-wrapper > .thumb {
+.tile.__9 > .video-wrapper.__1 > .thumb-wrapper > .thumb {
   width: 300px;
 }
 
-.tile.__9 > .video.__1 > .thumb-wrapper > .play {
-  position: absolute;
-
-  width: 50px;
+.tile.__9 > .video-wrapper.__1 {
+  top: 10%;
+  right: 20%;
+  z-index: 2;
 }
