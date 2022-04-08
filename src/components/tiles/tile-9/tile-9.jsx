@@ -26,6 +26,19 @@ const Tile9 = ({ state, dispatch }) => (
 
     <img draggable="false" className="photo __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-9/photos/GIF_2_D.png" />    
 
+    <div className="partners-button-wrapper">
+      <button
+        className="partners-button"
+        onClick={() => {
+          dispatch({
+            type: actions.OPEN_PARTNERS
+          })
+        }}
+      >
+        <img draggable="false" src="https://cti-assets.s3.us-west-2.amazonaws.com/buttons/botao_apoios.png" />
+        apoios e parce-
+      </button>
+    </div>
   </div>
 );
 

@@ -61,3 +61,38 @@
   width: 250px;
 }
 
+.tile.__1 > .about-button-wrapper {
+  position: absolute;
+  top: 90px;
+  right: 120px;
+}
+
+.tile.__1 > .about-button-wrapper > button.about-button {
+  position: relative;
+
+  background-color: transparent;
+  border: none;
+
+  color: #2A4F98;
+  font-size: 24px;
+
+  letter-spacing: 1px;
+
+  font-weight: 200;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.tile.__1 > .about-button-wrapper > button.about-button > img {
+  position: absolute;
+  left: 40px;
+  top: -92px;
+
+  width: 300px;
+
+  user-select: none;
+}

@@ -8,7 +8,10 @@ export const status = {
   PAUSE: 'pause',
 };
 
-const VideoWrapper = ({ setVideo, video, id, thumbnail, src}) => {
+const VideoWrapper = ({
+  setVideo, video, id, thumbnail,
+  src, synopsis, author, setAudio,
+}) => {
   const imageRef = useRef();
   const videoRef = useRef();
   const [showing, setShowing] = useState(false);
@@ -16,7 +19,6 @@ const VideoWrapper = ({ setVideo, video, id, thumbnail, src}) => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
-    console.log([imageRef.current])
     setWidth(imageRef.current?.offsetWidth);
     setHeight(imageRef.current?.offsetHeight);
   }, []);
@@ -71,7 +73,55 @@ const VideoWrapper = ({ setVideo, video, id, thumbnail, src}) => {
           </div>
         )
       }
-      
+      {
+        author && synopsis ? (
+          <div className="infos">
+            <div
+              onClick={() => {
+                setAudio({
+                  src: author.src,
+                  title: synopsis.title,
+                  subtitle: synopsis.subtitle,
+                  place: author.place,
+                });
+              }}
+              className="synopsis"
+            >
+              <svg
+                className="audio-play"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#2a4f98"
+              >
+                <path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/>
+              </svg>
+              <strong>{synopsis.title}</strong>
+            </div>  
+
+            <div
+              className="author"
+              onClick={() => {
+                setAudio({
+                  src: author.src,
+                  title: synopsis.title,
+                  subtitle: synopsis.subtitle,
+                  place: author.place,
+                });
+              }}
+            >
+              <svg
+                className="audio-play"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#2a4f98"
+              >
+                <path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/>
+              </svg>  
+              {author.name}
+            </div>  
+          </div>
+        ) : null
+      }
     </div>
   )
 };

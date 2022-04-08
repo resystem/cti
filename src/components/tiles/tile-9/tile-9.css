@@ -41,3 +41,42 @@
   right: 20%;
   z-index: 2;
 }
+
+.tile.__9 > .partners-button-wrapper {
+  position: absolute;
+  bottom: 20%;
+  right: 25%;
+}
+
+.tile.__9 > .partners-button-wrapper > button.partners-button {
+  position: relative;
+  text-align: left;
+  width: 100px;
+
+  background-color: transparent;
+  border: none;
+
+  color: #68b7b0;
+  font-size: 24px;
+
+  letter-spacing: 1px;
+
+  font-weight: 200;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.tile.__9 > .partners-button-wrapper > button.partners-button > img {
+  position: absolute;
+  left: 60px;
+  top: 0px;
+
+  width: 200px;
+
+  user-select: none;
+}
+

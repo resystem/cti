@@ -17,3 +17,31 @@
   position: absolute;
   width: 50px;
 }
+
+.video-wrapper > .infos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 8px;
+}
+
+.video-wrapper > .infos > .author,
+.video-wrapper > .infos > .synopsis {
+  display: flex;
+  align-items: center;
+
+  color: #2a4f98;
+
+  line-height: 1em;
+}
+
+.video-wrapper > .infos svg.audio-play {
+  width: 24px;
+  height: 24px;
+
+  position: relative;
+  top: -1px;
+
+  vertical-align: middle;
+}

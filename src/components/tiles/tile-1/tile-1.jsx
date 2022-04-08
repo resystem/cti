@@ -27,6 +27,22 @@ const Tile1 = ({ state, dispatch }) => (
           data,
         })
       }}
+      setAudio={(data) => {
+        dispatch({
+          type: actions.SET_AUDIO,
+          data,
+        })
+      }}
+      synopsis={{
+        title: 'NHE‘EN-MONGARAI',
+        subtitle: 'Batismo da alma',
+        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-11/audio/biografia+filme+1_Nhemongarai+BATISMO+DA+ALMA.wav'
+      }}
+      author={{
+        name: 'Alberto Alvares',
+        place: 'Tekoha Yhovy e Tekoha Guarani - Terra Indígena de Guasu Guavirá, Município de Guaíra - PR NHE\‘EN-MONGARAI',
+        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-11/audio/biografia+filme+1_Nhemongarai+BATISMO+DA+ALMA.wav'
+      }}
     />
 
     <VideoWrapper
@@ -45,6 +61,18 @@ const Tile1 = ({ state, dispatch }) => (
     <img draggable="false" className="gif __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/photos/GIF+1_Opy+D+novo.png" />
 
     <img draggable="false" className="gif __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/illustrations/galinhas.png" />
+
+    <div className="about-button-wrapper">
+      <button
+        className="about-button"
+        onClick={() => {
+          dispatch({ type: actions.OPEN_ABOUT });
+        }}
+      >
+        <img draggable="false" src="https://cti-assets.s3.us-west-2.amazonaws.com/buttons/botao_enquanto+isso.png" />
+        enquanto isso
+      </button>
+    </div>
   </div>
 );
 

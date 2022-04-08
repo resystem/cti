@@ -3,14 +3,18 @@ import React, { createContext, useReducer } from 'react';
 export const actions = {
   SET_VIDEO: 'SET_VIDEO',
   SET_AUDIO: 'SET_AUDIO',
-  SET_TEXT: 'SET_TEXT',
   SET_LANGUAGE: 'SET_LANGUAGE',
+  OPEN_PARTNERS: 'OPEN_PARTNERS',
+  CLOSE_PARTNERS: 'CLOSE_PARTNERS',
+  OPEN_ABOUT: 'OPEN_ABOUT',
+  CLOSE_ABOUT: 'CLOSE_ABOUT',
 };
 
 const initialState = {
   audio: null,
   video: null,
-  text: null,
+  about: false,
+  partners: false,
   language: 'pt',
 };
 
@@ -20,8 +24,14 @@ const reducer = (state, action) => {
       return { ...state, video: action.data };
     case actions.SET_AUDIO:
       return { ...state, audio: action.data };
-    case actions.SET_TEXT:
-      return { ...state, text: action.data };
+    case actions.OPEN_ABOUT:
+      return { ...state, about: true };
+    case actions.CLOSE_ABOUT:
+      return { ...state, about: false };
+    case actions.OPEN_PARTNERS:
+      return { ...state, partners: true };
+    case actions.CLOSE_PARTNERS:
+      return { ...state, partners: false };
     case actions.SET_LANGUAGE:
       return { ...state, language: action.data };
     default:

@@ -3,6 +3,9 @@ import Hammer from 'react-hammerjs';
 import { actions, ModalsContext } from '../store';
 import ContentModal from '../components/content-modal/content-modal';
 import VideoPlayer from '../components/video-player/video-player';
+import AudioPlayer from '../components/audio-player/audio-player';
+import AboutText from './about-text/about-text';
+import PartnersText from './partners-text/partners-text';
 import Tile1 from '../components/tiles/tile-1/tile-1';
 import Tile2 from '../components/tiles/tile-2/tile-2';
 import Tile3 from '../components/tiles/tile-3/tile-3';
@@ -149,6 +152,45 @@ const Layout = ({ language }) => {
           />
         ) : null
       }
+
+      {
+        state.audio ? (
+          <AudioPlayer
+            audio={state.audio}
+            setAudio={(data) => {
+              dispatch({
+                type: actions.SET_AUDIO,
+                data,
+              });
+            }}
+          />
+        ) : null
+      }
+
+      {
+        state.about ? (
+          <AboutText
+            onClose={() => {
+              dispatch({
+                type: actions.CLOSE_ABOUT,
+              });
+            }}
+          />
+        ) : null
+      }
+
+      {
+        state.partners ? (
+          <PartnersText
+            onClose={() => {
+              dispatch({
+                type: actions.CLOSE_PARTNERS,
+              });
+            }}
+          />
+        ) : null
+      }
+
       <ContentModal
         hide={!openedContent}
         backgroundColor={openedContent?.backgroundColor}
