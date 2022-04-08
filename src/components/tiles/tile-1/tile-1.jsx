@@ -1,5 +1,6 @@
 import React from 'react'
 import { actions } from '../../../store';
+import LanguageSelector from '../../language-selector/language-selector';
 import VideoWrapper from '../../video/video';
 import './tile-1.css'
 
@@ -15,6 +16,8 @@ const video2 = {
 
 const Tile1 = ({ state, dispatch }) => (
   <div className="tile __1">
+    <LanguageSelector language={state.language} />
+
     <img draggable="false" className="illustration __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/illustrations/desenho-Sophia05.jpg" />
     <VideoWrapper
       id="__1"
