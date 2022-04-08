@@ -4,7 +4,9 @@ import VideoWrapper from '../../video/video';
 import './tile-10.css'
 
 const video1 = {
-  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-10/films/filme_4_AYVU-RAPYTA_Master_Legendas_Portugues.mp4',
+  en: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-10/films/filme_4_AYVU-RAPYTA_Master_Legendas_English.mp4',
+  es: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-10/films/filme_4_AYVU-RAPYTA_Master_Legendas_Espanol.mp4',
 };
 
 const Tile10 = ({ state, dispatch }) => (

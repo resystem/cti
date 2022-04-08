@@ -4,15 +4,13 @@ import VideoWrapper from '../../video/video';
 import './tile-1.css'
 
 const video1 = {
-  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
-  en: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
-  es: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/films/filme_1_Nhemongarai-BATISMO-DA-ALMA_Master_Legendas_Portugues.mp4',
+  en: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/films/filme_1_Nhemongarai-BATISMO-DA-ALMA_Master_Legendas_English.mp4',
+  es: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/films/filme_1_Nhemongarai-BATISMO-DA-ALMA_Master_Legendas_Espanol.mp4',
 };
 
 const video2 = {
-  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
-  en: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
-  es: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/videos/depoimento1.mp4',
 };
 
 const Tile1 = ({ state, dispatch }) => (

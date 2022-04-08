@@ -4,7 +4,7 @@ import VideoWrapper from '../../video/video';
 import './tile-8.css'
 
 const video1 = {
-  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-8/videos/depoimento5.mp4',
 };
 
 const Tile8 = ({ state, dispatch }) => (

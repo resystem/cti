@@ -4,9 +4,9 @@ import VideoWrapper from '../../video/video';
 import './tile-3.css'
 
 const video1 = {
-  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
-  en: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
-  es: 'https://cti-assets.s3.us-west-2.amazonaws.com/pexels-ekaterina-bolovtsova-7003250.mp4',
+  pt: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/films/filme_5_AyvyNhexyro_Master_Legendas_Portugues-001.mp4',
+  en: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/films/filme_5_AyvyNhexyro_Master_Legendas_English-004.mp4',
+  es: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/films/filme_5_AyvyNhexyro_Master_Legendas_Espanol-002.mp4',
 };
 
 const Tile3 = ({ state, dispatch }) => (
