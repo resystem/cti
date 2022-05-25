@@ -29,8 +29,12 @@ const Layout = ({ language }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [deltaX, setDeltaX] = useState(0);
   const [deltaY, setDeltaY] = useState(0);
-  const [zoom, setZoom] = useState(1);
-  const zoomStep = 0.1;
+  const [zoom, setZoom] = useState(-2);
+  const zoomStep = 1;
+
+  useLayoutEffect(() => {
+    setTimeout(() => setZoom(20), 200);
+  }, []);
 
   useLayoutEffect(() => {
     const element = document.querySelector('.navigation-wrapper');
@@ -78,7 +82,7 @@ const Layout = ({ language }) => {
   }
 
   const zoomOut = () => {
-    if (zoom === 1) return;
+    if (zoom === -5) return;
     setZoom(zoom - zoomStep)
   }
 
@@ -115,13 +119,12 @@ const Layout = ({ language }) => {
             className="navigation-wrapper"
             onWheel={(event) => {
               setMousePosition({ x: event.clientX, y: event.clientY })
-              if (event.deltaY > 0) zoomIn();
-              else zoomOut(); 
+              if (event.deltaY > 0) zoomOut();
+              else zoomIn(); 
             }}
             style={{
-              transition: `transform ease-out 200ms`,
-              touchAction: 'none',
-              willChange: 'transform',
+              willChange: 'zoom',
+              zoom: `${40 + zoom * 4}%`
             }}
           >
             <Tile1 state={state} dispatch={dispatch} />
