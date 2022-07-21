@@ -29,7 +29,21 @@ const Layout = ({ language }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [deltaX, setDeltaX] = useState(0);
   const [deltaY, setDeltaY] = useState(0);
-  const [zoom, setZoom] = useState(-2);
+  const [loaded, setLoaded] = useState([
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ])
+  const [zoom, setZoom] = useState(0);
   const zoomStep = 1;
 
   useLayoutEffect(() => {
@@ -51,28 +65,60 @@ const Layout = ({ language }) => {
     if (Math.abs(y + deltaY) > calcMaxHeight) newY = -calcMaxHeight;
 
     element.style.transform = `translate3d(${newX}px, ${newY}px, 0)`;
-  }, [deltaX, deltaY]);
 
-  // useEffect(() => {
-  //   const element = document.querySelector('.navigation-wrapper');
-  //   const [centerX, centerY] = [element.clientWidth / 2, element.clientHeight / 2]
-  //   console.log("CENTER_X",centerX)
-  //   console.log("CENTER_Y", centerY)
-  //   const deltaX = mousePosition.x - centerX;
-  //   const deltaY = mousePosition.y - centerY;
-  //   console.log('NEW_X', deltaX);
-  //   console.log('NEW_Y', deltaY);
+    const base = 1400;
+
+    const newLoaded = [...loaded];
+
+    const row2 = newY * -1 > base / 2;
+    const row3 = newY * -1 > 1.5;
+
+    const column2 = newY * -1 > base / 2
+    const column3 = newX * -1 > 1.5;
+    const column4 = newX * -1 > 2.5;
+
+    if (column3) {
+      newLoaded[2] = true;
+    }
+
+    if (column4) {
+      newLoaded[3] = true;
+    }
     
-  //   const newX = centerX + (mousePosition.x - centerX);
-  //   const newY = centerY + (mousePosition.y - centerY);
-  //   console.log('NEW_X', newX);
-  //   console.log('NEW_Y', newY);
+    if (row3) {
+      newLoaded[8] = true;
+    }
 
-  //   setX(newX)
-  //   setY(newY)
+    if (row2) {
+      newLoaded[4] = true;
+    }
 
-  //   element.style.transform = `translate3d(${newX}px, ${newY}px, 0) scale(${zoom})`;
-  // }, [zoom])
+    if (row2 && column3) {
+      newLoaded[6] = true;
+    }
+    
+    if (row2 && column4) {
+      newLoaded[7] = true;
+    }
+
+    if (row2 && column3) {
+      newLoaded[6] = true;
+    }
+    
+    if (row3 && column4) {
+      newLoaded[9] = true;
+    }
+
+    if (row3 && column3) {
+      newLoaded[10] = true;
+    }
+    
+    if (row3 && column4) {
+      newLoaded[11] = true;
+    }
+
+    setLoaded(newLoaded);
+  }, [deltaX, deltaY]);
 
   const grid = []; 
 
@@ -82,7 +128,7 @@ const Layout = ({ language }) => {
   }
 
   const zoomOut = () => {
-    if (zoom === -5) return;
+    if (zoom === 0) return;
     setZoom(zoom - zoomStep)
   }
 
@@ -127,18 +173,66 @@ const Layout = ({ language }) => {
               zoom: `${40 + zoom * 4}%`
             }}
           >
-            <Tile1 state={state} dispatch={dispatch} />
-            <Tile2 state={state} dispatch={dispatch} />
-            <Tile3 state={state} dispatch={dispatch} />
-            <Tile4 state={state} dispatch={dispatch} />
-            <Tile5 state={state} dispatch={dispatch} />
-            <Tile6 state={state} dispatch={dispatch} />
-            <Tile7 state={state} dispatch={dispatch} />
-            <Tile8 state={state} dispatch={dispatch} />
-            <Tile9 state={state} dispatch={dispatch} />
-            <Tile10 state={state} dispatch={dispatch} />
-            <Tile11 state={state} dispatch={dispatch} />
-            <Tile12 state={state} dispatch={dispatch} />
+            {
+              loaded[0] ? (
+                <Tile1 state={state} dispatch={dispatch} />
+              ) : null
+            }
+            {
+              loaded[1] ? (
+                <Tile2 state={state} dispatch={dispatch} />
+              ) : null
+            }
+            {
+              loaded[2] ? (
+                <Tile3 state={state} dispatch={dispatch} />
+              ) : null
+            }
+            {
+              loaded[3] ? (
+                <Tile4 state={state} dispatch={dispatch} />
+              ) : null
+            }
+            {
+              loaded[4] ? (
+                <Tile5 state={state} dispatch={dispatch} />
+              ) : null
+            }
+            {
+              loaded[5] ? (
+                <Tile6 state={state} dispatch={dispatch} />
+            ) : null
+            }
+            {
+              loaded[6] ? (
+                <Tile7 state={state} dispatch={dispatch} />
+              ) : null
+            }
+            {
+              loaded[7] ? (
+                <Tile8 state={state} dispatch={dispatch} />
+              ) : null
+            }
+            {
+              loaded[8] ? (
+                <Tile9 state={state} dispatch={dispatch} />
+              ) : null
+            }
+            {
+              loaded[9] ? (
+                <Tile10 state={state} dispatch={dispatch} />
+              ) : null
+            }
+            {
+              loaded[10] ? (
+                <Tile11 state={state} dispatch={dispatch} />
+              ) : null
+            }
+            {
+              loaded[11] ? (
+                <Tile12 state={state} dispatch={dispatch} />
+              ) : null
+            }
           </div>
         </Hammer>
       </div>
