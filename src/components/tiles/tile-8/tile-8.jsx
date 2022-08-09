@@ -11,7 +11,7 @@ const Tile8 = ({ state, dispatch }) => (
   <div className="tile __8">
     <img draggable="false" className="illustration __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-8/illustrations/bocasouvidos.jpg" />
     
-    <img draggable="false" className="photo __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-8/photos/GIF_5_C.png" />    
+    <img draggable="false" className="photo __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/gifs/GIF+5_C.gif" />    
 
     <VideoWrapper
       id="__1"

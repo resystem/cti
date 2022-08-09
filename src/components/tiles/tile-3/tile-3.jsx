@@ -13,7 +13,7 @@ const Tile3 = ({ state, dispatch }) => (
   <div className="tile __3">
     <img draggable="false" className="illustration __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/illustrations/forma_3.png" />
     
-    <img draggable="false" className="photo __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/photos/GIF_3_A.png" />    
+    <img draggable="false" className="photo __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/gifs/GIF+3_A.gif" />    
 
     <img draggable="false" className="illustration __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/illustrations/desenho-Sophia13.jpg" />
 
