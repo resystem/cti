@@ -5,6 +5,7 @@ export const actions = {
   SET_AUDIO: 'SET_AUDIO',
   SET_LANGUAGE: 'SET_LANGUAGE',
   OPEN_PARTNERS: 'OPEN_PARTNERS',
+  OPEN_CTI: 'OPEN_CTI',
   CLOSE_PARTNERS: 'CLOSE_PARTNERS',
   OPEN_ABOUT: 'OPEN_ABOUT',
   CLOSE_ABOUT: 'CLOSE_ABOUT',
@@ -15,6 +16,7 @@ const initialState = {
   video: null,
   about: false,
   partners: false,
+  cti: false,
   language: 'pt',
 };
 
@@ -32,6 +34,10 @@ const reducer = (state, action) => {
       return { ...state, partners: true };
     case actions.CLOSE_PARTNERS:
       return { ...state, partners: false };
+    case actions.OPEN_CTI:
+      return { ...state, cti: true };
+    case actions.CLOSE_CTI:
+      return { ...state, cti: false };
     case actions.SET_LANGUAGE:
       return { ...state, language: action.data };
     default:

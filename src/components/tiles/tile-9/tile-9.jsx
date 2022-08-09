@@ -26,7 +26,7 @@ const Tile9 = ({ state, dispatch }) => (
 
     <img draggable="false" className="photo __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-9/photos/GIF_2_D.png" />    
 
-    <div className="partners-button-wrapper">
+    <div className="partners-button-wrapper button-hover">
       <button
         className="partners-button"
         onClick={() => {

@@ -65,7 +65,7 @@ const Tile1 = ({ state, dispatch }) => (
 
     <img draggable="false" className="gif __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/illustrations/galinhas.png" />
 
-    <div className="about-button-wrapper">
+    <div className="about-button-wrapper button-hover">
       <button
         className="about-button"
         onClick={() => {

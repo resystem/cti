@@ -6,6 +6,7 @@ import VideoPlayer from '../components/video-player/video-player';
 import AudioPlayer from '../components/audio-player/audio-player';
 import AboutText from './about-text/about-text';
 import PartnersText from './partners-text/partners-text';
+import CtiText from './cti-text/cti-text';
 import Tile1 from '../components/tiles/tile-1/tile-1';
 import Tile2 from '../components/tiles/tile-2/tile-2';
 import Tile3 from '../components/tiles/tile-3/tile-3';
@@ -267,9 +268,23 @@ const Layout = ({ language }) => {
       {
         state.about ? (
           <AboutText
+            language={state.language}
             onClose={() => {
               dispatch({
                 type: actions.CLOSE_ABOUT,
+              });
+            }}
+          />
+        ) : null
+      }
+      
+      {
+        state.cti ? (
+          <CtiText
+            language={state.language}
+            onClose={() => {
+              dispatch({
+                type: actions.CLOSE_CTI,
               });
             }}
           />
@@ -279,6 +294,7 @@ const Layout = ({ language }) => {
       {
         state.partners ? (
           <PartnersText
+            language={state.language}
             onClose={() => {
               dispatch({
                 type: actions.CLOSE_PARTNERS,
