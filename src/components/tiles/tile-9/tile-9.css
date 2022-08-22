@@ -11,13 +11,22 @@
 }
 
 /* illustrations */
-
 .tile.__9 > .illustration.__1 {
   width: 650px;
   
   position: absolute;
-  top: 120px;
+  top: 0px;
   left: 50px;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.tile.__9 > .illustration.__2 {
+  width: 170px;
+  
+  position: absolute;
+  top: -120px;
+  left: 10px;
   z-index: 0;
   cursor: pointer;
 }
@@ -25,7 +34,7 @@
 /* gifs */
 
 .tile.__9 > .photo.__1 {
-  width: 350px;
+  width: 150px;
   
   position: absolute;
   bottom: 23%;

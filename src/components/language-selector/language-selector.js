@@ -20,7 +20,7 @@ const languages = {
 const LanguageSelector = ({ language }) =>  (
   <div className="language-selector">
     <div className="selected-language">{languages[language].label}</div>
-    <svg xmlns="http://www.w3.org/2000/svg" color="#2a4f98" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/></svg>
+    <img className="arrow" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/illustrations/flecha.png" />
     <ul className="language-list">
       {
         Object.keys(languages)

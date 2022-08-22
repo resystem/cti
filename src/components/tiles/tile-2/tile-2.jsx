@@ -28,6 +28,7 @@ const Tile2 = ({ state, dispatch }) => (
     />
 
     <img draggable="false" className="illustration __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/illustrations/desenhos-AraPoty11.jpg" />
+    <img draggable="false" className="illustration __3" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/illustrations/arvore.png" />
   </div>
 );
 

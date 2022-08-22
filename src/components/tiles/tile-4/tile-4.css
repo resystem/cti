@@ -44,6 +44,16 @@
   cursor: pointer;
 }
 
+.tile.__4 > .illustration.__4 {
+  width: 480px;
+  
+  position: absolute;
+  top: 60px;
+  right: 60px;
+
+  cursor: pointer;
+}
+
 /* videos */
 
 .tile.__4 > .video-wrapper.__1 > .thumb-wrapper > .thumb {

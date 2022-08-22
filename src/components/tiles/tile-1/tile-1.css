@@ -14,7 +14,7 @@
   width: 200px;
   
   position: absolute;
-  top: 120px;
+  top: 190px;
   left: 0;
 
   cursor: pointer;
@@ -46,7 +46,7 @@
   width: 120px;
   
   position: absolute;
-  top : 17%;
+  top : calc(21%);
   left: calc(10px);
 
   cursor: pointer;
@@ -54,7 +54,7 @@
 
 /* videos */
 .tile.__1 > .video-wrapper.__1 {
-  top: 273px;
+  top: 343px;
   left: 80px;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .tile.__1 > .video-wrapper.__2 {
-  top: 273px;
+  top: 343px;
   right: 80px;
 }
 

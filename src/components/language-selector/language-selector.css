@@ -12,6 +12,10 @@
   gap: 4px;
 }
 
+.language-selector > .arrow {
+  height: 20px;
+}
+
 .language-selector > ul.language-list {
   list-style: none;
 }

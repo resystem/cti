@@ -54,6 +54,16 @@
   cursor: pointer;
 }
 
+.tile.__10 > .illustration.__5 {
+  width: 380px;
+  
+  position: absolute;
+  top: 300px;
+  right: 10%;
+
+  cursor: pointer;
+}
+
 /* gifs */
 
 .tile.__10 > .photo.__1 {

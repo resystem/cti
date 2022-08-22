@@ -34,6 +34,8 @@ const Tile4 = ({ state, dispatch }) => (
 
     <img draggable="false" className="illustration __3" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/illustrations/forma_2.png" />
 
+    <img draggable="false" className="illustration __4" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/illustrations/casa.png" />
+
     <VideoWrapper
       id="__2"
       video={state.video}

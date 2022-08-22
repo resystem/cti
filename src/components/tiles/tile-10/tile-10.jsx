@@ -31,6 +31,7 @@ const Tile10 = ({ state, dispatch }) => (
     />
 
     <img draggable="false" className="illustration __4" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-10/illustrations/fogoecidade_pg.jpg" />
+    <img draggable="false" className="illustration __5" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/illustrations/sementes.png" />
   </div>
 );
 

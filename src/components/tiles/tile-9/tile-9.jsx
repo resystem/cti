@@ -10,6 +10,7 @@ const video1 = {
 const Tile9 = ({ state, dispatch }) => (
   <div className="tile __9">
     <img draggable="false" className="illustration __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-9/illustrations/alberto.JPG" />
+    <img draggable="false" className="illustration __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-9/illustrations/KEREXU_IMG_8913+2.png" />
 
     <VideoWrapper
       id="__1"
@@ -36,7 +37,7 @@ const Tile9 = ({ state, dispatch }) => (
         }}
       >
         <img draggable="false" src="https://cti-assets.s3.us-west-2.amazonaws.com/buttons/botao_apoios.png" />
-        apoios e parce-
+        apoios e parcerias
       </button>
     </div>
   </div>

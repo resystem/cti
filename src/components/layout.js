@@ -53,8 +53,8 @@ const Layout = ({ language }) => {
 
   useLayoutEffect(() => {
     const element = document.querySelector('.navigation-wrapper');
-    const calcMaxWidth = element.scrollWidth - window.innerWidth;
-    const calcMaxHeight = element.scrollHeight - window.innerHeight;
+    const calcMaxWidth = element.scrollWidth - window.innerWidth + 230;
+    const calcMaxHeight = element.scrollHeight - window.innerHeight + 230;
 
     let newX = 0;
     let newY = 0;

@@ -28,6 +28,17 @@
   cursor: pointer;
 }
 
+.tile.__2 > .illustration.__3 {
+  width: 300px;
+  
+  position: absolute;
+  bottom: 150px;
+  left: 55%;
+  z-index: 1;
+
+  cursor: pointer;
+}
+
 /* gifs */
 
 .tile.__2 > .gif.__2 {
