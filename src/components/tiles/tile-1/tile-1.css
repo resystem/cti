@@ -42,6 +42,16 @@
   cursor: pointer;
 }
 
+.tile.__1 > .gif.__3 {
+  width: 120px;
+  
+  position: absolute;
+  top : 17%;
+  left: calc(10px);
+
+  cursor: pointer;
+}
+
 /* videos */
 .tile.__1 > .video-wrapper.__1 {
   top: 273px;
