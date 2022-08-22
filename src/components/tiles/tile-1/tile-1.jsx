@@ -61,7 +61,7 @@ const Tile1 = ({ state, dispatch }) => (
       }}
     />
 
-    <img draggable="false" className="gif __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/gifs/GIF+1_Opy+D+novo.gif" />
+    <img draggable="false" className="gif __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/gifs/1.gif" />
 
     <img draggable="false" className="gif __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/illustrations/galinhas.png" />
 
