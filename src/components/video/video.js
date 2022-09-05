@@ -65,6 +65,10 @@ const VideoWrapper = ({
               className="thumb"
               src={thumbnail}
               ref={imageRef}
+              onLoad={() => {
+                setWidth(imageRef.current?.offsetWidth);
+                setHeight(imageRef.current?.offsetHeight);
+              }}
             />
             <svg className="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff"
             >

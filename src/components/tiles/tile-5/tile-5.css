@@ -65,3 +65,44 @@
   left: 28%;
   z-index: 1;
 }
+
+
+.tile.__5 > .cti-button-wrapper {
+  position: absolute;
+  top: 67%;
+  right: 25%;
+
+  z-index: 10;
+}
+
+.tile.__5 > .cti-button-wrapper > button.cti-button {
+  position: relative;
+  text-align: left;
+  width: 100px;
+
+  background-color: transparent;
+  border: none;
+
+  color: rgb(204, 44, 77);
+  font-size: 24px;
+
+  letter-spacing: 1px;
+
+  font-weight: 200;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.tile.__5 > .cti-button-wrapper > button.cti-button > img {
+  position: absolute;
+  left: -110px;
+  top: -90px;
+
+  width: 220px;
+
+  user-select: none;
+}

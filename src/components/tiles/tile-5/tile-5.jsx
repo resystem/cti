@@ -47,6 +47,22 @@ const Tile5 = ({ state, dispatch }) => (
 
     <img draggable="false" className="illustration __3" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-5/illustrations/janela.jpg" />
 
+    <div
+      className="cti-button-wrapper button-hover"
+      onClick={() => {
+        dispatch({
+          type: 'OPEN_CTI',
+        })
+      }}
+    >
+      <button
+        className="cti-button"
+        onClick={() => null}
+      >
+        <img draggable="false" src="https://cti-assets.s3.us-west-2.amazonaws.com/buttons/botao_cti+%281%29.png" />
+        CTI
+      </button>
+    </div>
   </div>
 );
 

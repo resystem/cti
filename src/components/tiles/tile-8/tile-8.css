@@ -57,3 +57,43 @@
   left: 140px;
   z-index: 2;
 }
+
+.tile.__8 > .download-button-wrapper {
+  position: absolute;
+  top: 55%;
+  right: 32px;
+
+  z-index: 10;
+}
+
+.tile.__8 > .download-button-wrapper > button.download-button {
+  position: relative;
+  text-align: left;
+  width: 100px;
+
+  background-color: transparent;
+  border: none;
+
+  color: rgb(255, 209, 86);
+  font-size: 24px;
+
+  letter-spacing: 1px;
+
+  font-weight: 200;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.tile.__8 > .download-button-wrapper > button.download-button > img {
+  position: absolute;
+  left: -50px;
+  top: -140px;
+
+  width: 180px;
+
+  user-select: none;
+}

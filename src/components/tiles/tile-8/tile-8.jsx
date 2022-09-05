@@ -26,8 +26,17 @@ const Tile8 = ({ state, dispatch }) => (
       }}
     />
 
-    <img draggable="false" className="illustration __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-8/illustrations/Kerexu_IMG_8892.png" />
+    <div className="download-button-wrapper button-hover">
+      <button
+        className="download-button"
+        onClick={() => null}
+      >
+        <img draggable="false" src="https://cti-assets.s3.us-west-2.amazonaws.com/buttons/botao_download.png" />
+        Download materiais
+      </button>
+    </div>
 
+    <img draggable="false" className="illustration __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-8/illustrations/Kerexu_IMG_8892.png" />
   </div>
 );
 

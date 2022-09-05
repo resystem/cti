@@ -12,16 +12,7 @@ const Tile7 = ({ dispatch }) => (
 
     <img draggable="false" className="illustration __4" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-7/illustrations/Julia_5_aldeia2.png" />
 
-    <img
-      onClick={() => {
-        dispatch({
-          type: 'OPEN_CTI',
-        })
-      }}
-      draggable="false"
-      className="illustration __5 button-hover"
-      src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-7/illustrations/forma_5.png"
-    />
+    <img draggable="false" className="illustration __5" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-7/illustrations/forma_5.png" />
     
   </div>
 );
