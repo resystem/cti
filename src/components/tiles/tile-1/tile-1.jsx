@@ -39,12 +39,11 @@ const Tile1 = ({ state, dispatch }) => (
       synopsis={{
         title: 'NHE‘EN-MONGARAI',
         subtitle: 'Batismo da alma',
-        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-11/audio/biografia+filme+1_Nhemongarai+BATISMO+DA+ALMA.wav'
       }}
       author={{
         name: 'Alberto Alvares',
         place: 'Tekoha Yhovy e Tekoha Guarani - Terra Indígena de Guasu Guavirá, Município de Guaíra - PR NHE\‘EN-MONGARAI',
-        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-11/audio/biografia+filme+1_Nhemongarai+BATISMO+DA+ALMA.wav'
+        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-11/audio/biografia+filme+1_Nhemongarai+BATISMO+DA+ALMA.wav',
       }}
     />
 

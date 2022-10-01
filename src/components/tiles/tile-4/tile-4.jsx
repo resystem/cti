@@ -16,7 +16,7 @@ const video2 = {
 const Tile4 = ({ state, dispatch }) => (
   <div className="tile __4">
     <VideoWrapper
-      id="__1"
+      id="__5"
       video={state.video}
       thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/film-thumbnail/filme6_MoaKaaguy_pb.png"
       src={video1[state.language]}
@@ -25,6 +25,22 @@ const Tile4 = ({ state, dispatch }) => (
           type: actions.SET_VIDEO,
           data,
         })
+      }}
+      setAudio={(data) => {
+        dispatch({
+          type: actions.SET_AUDIO,
+          data,
+        })
+      }}
+      synopsis={{
+        title: 'MOÃ KA A GUY',
+        subtitle: '',
+        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/sinopse+filme+6_Moa+Kaaguy.wav',
+      }}
+      author={{
+        name: 'Carlos Papa',
+        place: '',
+        src: ''
       }}
     />
 
@@ -37,7 +53,7 @@ const Tile4 = ({ state, dispatch }) => (
     <img draggable="false" className="illustration __4" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/illustrations/casa.png" />
 
     <VideoWrapper
-      id="__2"
+      id="__6"
       video={state.video}
       thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/film-thumbnail/depoimento4_frame_pb.png"
       src={video2[state.language]}

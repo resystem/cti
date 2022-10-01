@@ -13,7 +13,7 @@ const Tile9 = ({ state, dispatch }) => (
     <img draggable="false" className="illustration __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-9/illustrations/KEREXU_IMG_8913+2.png" />
 
     <VideoWrapper
-      id="__1"
+      id="__10"
       video={state.video}
       thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-9/film-thumbnail/depoimento3_frame_pb.png"      
       src={video1[state.language]}

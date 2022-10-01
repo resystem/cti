@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './cti-text.css';
 
 const texts = {
@@ -66,10 +66,11 @@ const texts = {
 };
 
 const CtiText = ({ language, onClose }) => {
+  const [isBottom, setIsBottom] = useState(false);
   const text = useRef();
 
   return (
-    <div className='partners-text-wrapper' onClick={onClose}>
+    <div className="partners-text-wrapper" onClick={onClose}>
       <div
         ref={text}
         className="partners-text"
@@ -82,8 +83,15 @@ const CtiText = ({ language, onClose }) => {
         <footer>
           <svg
             onClick={() => {
-              text.current.scrollTop += 100;
+              if (!text?.current) return;
+
+              if (isBottom) text.current.scrollTop = -100;
+              else text.current.scrollTop += 100;
+
+              const isB = text.current.scrollTop + text.current.clientHeight == text.current.scrollHeight
+              setIsBottom(isB);
             }}
+            style={{ transform: isBottom ? 'rotate(180deg)' : 'rotate(0deg)', transitionDuration: '200ms' }}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24" fill="#68b7b0"
           >

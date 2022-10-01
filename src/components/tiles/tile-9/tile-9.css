@@ -45,11 +45,11 @@
 
 /* videos */
 
-.tile.__9 > .video-wrapper.__1 > .thumb-wrapper > .thumb {
+.tile.__9 > .video-wrapper.__10 > .thumb-wrapper > .thumb {
   width: 300px;
 }
 
-.tile.__9 > .video-wrapper.__1 {
+.tile.__9 > .video-wrapper.__10 {
   top: 10%;
   right: 20%;
   z-index: 2;
@@ -71,6 +71,7 @@
 
   color: #68b7b0;
   font-size: 24px;
+  font-family: 'Exo', sans-serif;
 
   letter-spacing: 1px;
 

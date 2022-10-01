@@ -19,13 +19,22 @@ const VideoWrapper = ({
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
-    setWidth(imageRef.current?.offsetWidth);
-    setHeight(imageRef.current?.offsetHeight);
-  }, []);
+    if (imageRef.current) {
+      setWidth(imageRef.current?.offsetWidth);
+      setHeight(imageRef.current?.offsetHeight);
+    }
+  }, [imageRef]);
 
   useEffect(() => {
-    if (!video) setShowing(false);
-  }, [video])
+    if (video?.id !== id) {
+      videoRef?.current?.pause()
+      setShowing(false);
+    }
+
+    if (video && video.id === id) {
+      setShowing(true);
+    }
+  }, [video]);
 
   return (
     <div className={`video-wrapper ${id}`}>
@@ -41,6 +50,7 @@ const VideoWrapper = ({
               setVideo({
                 element: target,
                 status: status.PLAY,
+                id,
               })
             }}
           >
@@ -54,6 +64,7 @@ const VideoWrapper = ({
 
               setTimeout(() => {
                 setVideo({
+                  id,
                   element: videoRef.current,
                   status: status.PLAY,
                 });
@@ -78,51 +89,67 @@ const VideoWrapper = ({
         )
       }
       {
-        author && synopsis ? (
+        author || synopsis ? (
           <div className="infos">
-            <div
-              onClick={() => {
-                setAudio({
-                  src: author.src,
-                  title: synopsis.title,
-                  subtitle: synopsis.subtitle,
-                  place: author.place,
-                });
-              }}
-              className="synopsis"
-            >
-              <svg
-                className="audio-play"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#2a4f98"
-              >
-                <path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/>
-              </svg>
-              <strong>{synopsis.title}</strong>
-            </div>  
+            {
+              synopsis ? (
+                <div
+                  onClick={() => {
+                    setAudio({
+                      src: synopsis.src,
+                      title: synopsis.title,
+                      subtitle: synopsis.subtitle,
+                    });
+                  }}
+                  className="synopsis"
+                >
+                  {
+                    synopsis.src ? (
+                      <svg
+                        className="audio-play"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="#2a4f98"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/>
+                      </svg>
+                    ) : null
+                  }
+                  <strong>{synopsis.title}</strong>
+                </div>  
+              ) : null
+            }
 
-            <div
-              className="author"
-              onClick={() => {
-                setAudio({
-                  src: author.src,
-                  title: synopsis.title,
-                  subtitle: synopsis.subtitle,
-                  place: author.place,
-                });
-              }}
-            >
-              <svg
-                className="audio-play"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#2a4f98"
-              >
-                <path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/>
-              </svg>  
-              {author.name}
-            </div>  
+            {
+              author ? (
+                <div
+                  className="author"
+                  onClick={() => {
+                    if (!author.src) return;
+    
+                    setAudio({
+                      src: author.src,
+                      title: author.name,
+                      place: author.place,
+                    });
+                  }}
+                >
+                  {
+                    author.src ? (
+                      <svg
+                        className="audio-play"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="#2a4f98"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/>
+                      </svg>  
+                    ) : null
+                  }
+                  {author.name}
+                </div>  
+              ) : null
+            }
           </div>
         ) : null
       }

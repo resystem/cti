@@ -57,11 +57,11 @@
 
 /* videos */
 
-.tile.__3 > .video-wrapper.__1 > .thumb-wrapper > .thumb {
+.tile.__3 > .video-wrapper.__4 > .thumb-wrapper > .thumb {
   width: 700px;
 }
 
-.tile.__3 > .video-wrapper.__1 {
+.tile.__3 > .video-wrapper.__4 {
   bottom: -120px;
   left: 300px;
   z-index: 2;

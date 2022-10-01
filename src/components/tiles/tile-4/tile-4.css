@@ -56,20 +56,20 @@
 
 /* videos */
 
-.tile.__4 > .video-wrapper.__1 > .thumb-wrapper > .thumb {
+.tile.__4 > .video-wrapper.__5 > .thumb-wrapper > .thumb {
   width: 700px;
 }
 
-.tile.__4 > .video-wrapper.__1 {
+.tile.__4 > .video-wrapper.__5 {
   top: 400px;
   left: 60px;
 }
 
-.tile.__4 > .video-wrapper.__2 > .thumb-wrapper > .thumb {
+.tile.__4 > .video-wrapper.__6 > .thumb-wrapper > .thumb {
   width: 250px;
 }
 
-.tile.__4 > .video-wrapper.__2 {
+.tile.__4 > .video-wrapper.__6 {
   bottom: 200px;
   right: 200px;
 }

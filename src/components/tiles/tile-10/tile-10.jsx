@@ -18,7 +18,7 @@ const Tile10 = ({ state, dispatch }) => (
     <img draggable="false" className="illustration __3" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-10/illustrations/not-found.JPG" />
  
     <VideoWrapper
-      id="__1"
+      id="__11"
       video={state.video}
       thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-10/film-thumbnail/filme4_AYVU_RAPYTA_pb.png"
       src={video1[state.language]}
@@ -27,6 +27,21 @@ const Tile10 = ({ state, dispatch }) => (
           type: actions.SET_VIDEO,
           data,
         })
+      }}
+      setAudio={(data) => {
+        dispatch({
+          type: actions.SET_AUDIO,
+          data,
+        })
+      }}
+      synopsis={{
+        title: 'AYVU RAPYTA',
+        subtitle: '',
+      }}
+      author={{
+        name: 'Coletivo Mbya de cinema',
+        place: '',
+        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-10/biografia+filme+4_AYVU+RAPYTA.wav'
       }}
     />
 

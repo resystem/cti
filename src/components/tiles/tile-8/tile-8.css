@@ -48,11 +48,11 @@
 
 /* videos */
 
-.tile.__8 > .video-wrapper.__1 > .thumb-wrapper > .thumb {
+.tile.__8 > .video-wrapper.__9 > .thumb-wrapper > .thumb {
   width: 200px;
 }
 
-.tile.__8 > .video-wrapper.__1 {
+.tile.__8 > .video-wrapper.__9 {
   bottom: 120px;
   left: 140px;
   z-index: 2;
@@ -76,6 +76,7 @@
 
   color: rgb(255, 209, 86);
   font-size: 24px;
+  font-family: 'Exo', sans-serif;
 
   letter-spacing: 1px;
 

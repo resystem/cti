@@ -36,11 +36,11 @@
 
 /* videos */
 
-.tile.__11 > .video-wrapper.__1 > .thumb-wrapper > .thumb {
+.tile.__11 > .video-wrapper.__12 > .thumb-wrapper > .thumb {
   width: 250px;
 }
 
-.tile.__11 > .video-wrapper.__1 {
+.tile.__11 > .video-wrapper.__12 {
   top: 60px;
   left: 32%;
   z-index: 2;

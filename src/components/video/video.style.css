@@ -26,6 +26,10 @@
   margin-top: 8px;
 }
 
+.video-wrapper > .infos > .synopsis {
+  text-transform: uppercase;
+}
+
 .video-wrapper > .infos > .author,
 .video-wrapper > .infos > .synopsis {
   display: flex;

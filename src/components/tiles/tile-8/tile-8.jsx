@@ -14,7 +14,7 @@ const Tile8 = ({ state, dispatch }) => (
     <img draggable="false" className="photo __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/gifs/5.gif" />    
 
     <VideoWrapper
-      id="__1"
+      id="__9"
       video={state.video}
       thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-8/film-thumbnail/depoimento5_frame_pb.png"
       src={video1[state.language]}
@@ -32,7 +32,7 @@ const Tile8 = ({ state, dispatch }) => (
         onClick={() => null}
       >
         <img draggable="false" src="https://cti-assets.s3.us-west-2.amazonaws.com/buttons/botao_download.png" />
-        Download materiais
+        download materiais
       </button>
     </div>
 

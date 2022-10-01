@@ -20,7 +20,7 @@ const Tile3 = ({ state, dispatch }) => (
     <img draggable="false" className="illustration __3" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/illustrations/desenho-Sophia07.jpg" />
 
     <VideoWrapper
-      id="__1"
+      id="__4"
       video={state.video}
       thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/film-thumbnail/filme5_Ayvu_Nhexyro_pb.png"
       src={video1[state.language]}
@@ -29,6 +29,22 @@ const Tile3 = ({ state, dispatch }) => (
           type: actions.SET_VIDEO,
           data,
         })
+      }}
+      setAudio={(data) => {
+        dispatch({
+          type: actions.SET_AUDIO,
+          data,
+        })
+      }}
+      synopsis={{
+        title: 'AYVU NHEXYRÕ',
+        subtitle: '',
+        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/sinopse+filme+5_Ayvu+Nhexyro.wav'
+      }}
+      author={{
+        name: 'Werá Alexandre',
+        place: '',
+        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/biografia+filme+5_Ayvu+Nhexyro.wav'
       }}
     />
     

@@ -15,7 +15,7 @@ const Tile2 = ({ state, dispatch }) => (
     <img draggable="false" className="illustration __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/illustrations/desenho-Sophia12.jpg" />
 
     <VideoWrapper
-      id="__1"
+      id="__3"
       video={state.video}
       thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/film-thumbnail/thumb-filme-3-Conselhos-Mbya-Guarani_pb.png"
       src={video1[state.language]}
@@ -24,6 +24,22 @@ const Tile2 = ({ state, dispatch }) => (
           type: actions.SET_VIDEO,
           data,
         })
+      }}
+      setAudio={(data) => {
+        dispatch({
+          type: actions.SET_AUDIO,
+          data,
+        })
+      }}
+      synopsis={{
+        title: 'Conselhos Guarani Mbya',
+        subtitle: '',
+        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/sinopse+filme+3_Conselhos+Mbya+Guarani.wav',
+      }}
+      author={{
+        name: 'Alexandre Kuaray',
+        place: '',
+        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/biografia+filme+3_Conselhos+Mbya+Guarani.wav'
       }}
     />
 

@@ -46,20 +46,20 @@
 
 /* videos */
 
-.tile.__5 > .video-wrapper.__1 > .thumb-wrapper > .thumb {
+.tile.__5 > .video-wrapper.__7 > .thumb-wrapper > .thumb {
   width: 700px;
 }
 
-.tile.__5 > .video-wrapper.__1 {
+.tile.__5 > .video-wrapper.__7 {
   top: 110px;
   left: 60px;
 }
 
-.tile.__5 > .video-wrapper.__2 > .thumb-wrapper > .thumb {
+.tile.__5 > .video-wrapper.__8 > .thumb-wrapper > .thumb {
   width: 250px;
 }
 
-.tile.__5 > .video-wrapper.__2 {
+.tile.__5 > .video-wrapper.__8 {
   width: 300px;
   bottom: 34%;
   left: 28%;
@@ -85,6 +85,7 @@
 
   color: rgb(204, 44, 77);
   font-size: 24px;
+  font-family: 'Exo', sans-serif;
 
   letter-spacing: 1px;
 

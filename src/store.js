@@ -23,9 +23,11 @@ const initialState = {
 const reducer = (state, action) => {
   switch (action.type) {
     case actions.SET_VIDEO:
-      return { ...state, video: action.data };
+      if (state.audio?.element) state.audio.element.pause()
+      return { ...state, audio: null, video: action.data };
     case actions.SET_AUDIO:
-      return { ...state, audio: action.data };
+      if (state.video?.element) state.video.element.pause()
+      return { ...state, video: null, audio: action.data };
     case actions.OPEN_ABOUT:
       return { ...state, about: true };
     case actions.CLOSE_ABOUT:

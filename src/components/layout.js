@@ -44,11 +44,11 @@ const Layout = ({ language }) => {
     false,
     false,
   ])
-  const [zoom, setZoom] = useState(0);
+  const [zoom, setZoom] = useState(10);
   const zoomStep = 1;
 
   useLayoutEffect(() => {
-    setTimeout(() => setZoom(20), 200);
+    setTimeout(() => setZoom(10), 200);
   }, []);
 
   useLayoutEffect(() => {

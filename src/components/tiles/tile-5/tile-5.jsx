@@ -16,7 +16,7 @@ const video2 = {
 const Tile5 = ({ state, dispatch }) => (
   <div className="tile __5">
     <VideoWrapper
-      id="__1"
+      id="__7"
       video={state.video}
       thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-5/film-thumbnail/filme2_AVA_MOCOI_pb.png"
       src={video1[state.language]}
@@ -26,6 +26,20 @@ const Tile5 = ({ state, dispatch }) => (
           data,
         })
       }}
+      setAudio={(data) => {
+        dispatch({
+          type: actions.SET_AUDIO,
+          data,
+        })
+      }}
+      synopsis={{
+        title: 'AVA MOCOI',
+        subtitle: '',
+      }}
+      author={{
+        name: 'Centro de Trabalho Indigenista',
+        place: '',
+      }}
     />
 
     <img draggable="false" className="illustration __1" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-5/illustrations/desenhos-AraPoty4.jpg" />
@@ -33,7 +47,7 @@ const Tile5 = ({ state, dispatch }) => (
     <img draggable="false" className="illustration __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/tile-5/illustrations/desenhos-AraPoty6.jpg" />
 
     <VideoWrapper
-      id="__2"
+      id="__8"
       video={state.video}
       thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-5/film-thumbnail/depoimento2_frame_pb.png"
       src={video2[state.language]}
