@@ -18,8 +18,6 @@
   position: absolute;
   top: 50px;
   right: 10px;
-
-  cursor: pointer;
 }
 
 .tile.__7 > .illustration.__2 {
@@ -28,8 +26,6 @@
   position: absolute;
   bottom: 20%;
   left: 15px;
-
-  cursor: pointer;
 }
 
 .tile.__7 > .illustration.__3 {
@@ -38,8 +34,6 @@
   position: absolute;
   top: 20%;
   left: 35%;
-
-  cursor: pointer;
 }
 
 .tile.__7 > .illustration.__4 {
@@ -48,8 +42,6 @@
   position: absolute;
   bottom: 18%;
   right: 50px;
-
-  cursor: pointer;
 }
 
 .tile.__7 > .illustration.__5 {
@@ -59,6 +51,4 @@
   bottom: -100px;
   right: 30%;
   z-index: 1;
-
-  cursor: pointer;
 }

@@ -19,8 +19,6 @@
   position: absolute;
   top: 120px;
   left: 0;
-
-  cursor: pointer;
 }
 
 .tile.__4 > .illustration.__2 {
@@ -30,8 +28,6 @@
   bottom: -20px;
   left: -20px;
   z-index: 1;
-
-  cursor: pointer;
 }
 
 .tile.__4 > .illustration.__3 {
@@ -40,8 +36,6 @@
   position: absolute;
   bottom: 280px;
   right: 470px;
-
-  cursor: pointer;
 }
 
 .tile.__4 > .illustration.__4 {
@@ -50,8 +44,6 @@
   position: absolute;
   top: 60px;
   right: 60px;
-
-  cursor: pointer;
 }
 
 /* videos */

@@ -28,7 +28,7 @@ const VideoPlayer = ({ video, setVideo }) => (
     
     <input
       type="range"
-      value={video?.element ? video.element.currentTime / video.element.duration * 100 : 0}
+      value={video?.element?.currentTime ? video.element.currentTime / video.element.duration * 100 : 0}
       min={0}
       max={100}
     />

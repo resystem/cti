@@ -20,8 +20,6 @@
   top: 20%;
   left: -10%;
   z-index: 1;
-  
-  cursor: pointer;
 }
 
 .tile.__10 > .illustration.__2 {
@@ -30,8 +28,6 @@
   position: absolute;
   top: 20px;
   left: 50px;
-  
-  cursor: pointer;
 }
 
 .tile.__10 > .illustration.__3 {
@@ -40,8 +36,6 @@
   position: absolute;
   top: 0px;
   right: 0px;
-
-  cursor: pointer;
 }
 
 .tile.__10 > .illustration.__4 {
@@ -50,8 +44,6 @@
   position: absolute;
   bottom: 120px;
   right: 5%;
-
-  cursor: pointer;
 }
 
 .tile.__10 > .illustration.__5 {
@@ -60,8 +52,6 @@
   position: absolute;
   top: 300px;
   right: 10%;
-
-  cursor: pointer;
 }
 
 /* gifs */
@@ -72,8 +62,6 @@
   position: absolute;
   bottom: 23%;
   right: 35%;
-
-  cursor: pointer;
 }
   
 /* videos */

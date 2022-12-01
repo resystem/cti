@@ -15,6 +15,7 @@ const VideoWrapper = ({
   const imageRef = useRef();
   const videoRef = useRef();
   const [showing, setShowing] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
 
@@ -37,25 +38,42 @@ const VideoWrapper = ({
   }, [video]);
 
   return (
-    <div className={`video-wrapper ${id}`}>
+    <div className={`video-wrapper ${id} ${author || synopsis ? 'synopsis' : ''}`}>
       {
         showing ? (
-          <video
-            ref={videoRef}
-            className='video'
-            autoPlay
-            width={width}
-            height={height}
-            onTimeUpdate={({ target }) => {
-              setVideo({
-                element: target,
-                status: status.PLAY,
-                id,
-              })
-            }}
-          >
-            <source src={src} type="video/mp4" />
-          </video>
+          <>
+            <video
+              ref={videoRef}
+              className='video'
+              autoPlay
+              width={width}
+              height={height}
+              onPlaying={() => {
+                if(videoRef.current.readyState >= 3){
+                  setLoading(false);
+                }
+              }}
+              on
+              onTimeUpdate={({ target }) => {
+                setVideo({
+                  element: target,
+                  status: status.PLAY,
+                  id,
+                })
+              }}
+            >
+              <source src={src} type="video/mp4" />
+            </video>
+            {
+              loading ? (
+                <>
+                  <figure />
+                </>
+              ) : null
+            }
+            
+            <svg onClick={() => videoRef.current.requestFullscreen()} className="fullscreen-button" mlns="http://www.w3.org/2000/svg" height="48" width="48"><path fill="#ffffff" d="M10 38v-9.65h3V35h6.65v3Zm0-18.35V10h9.65v3H13v6.65ZM28.35 38v-3H35v-6.65h3V38ZM35 19.65V13h-6.65v-3H38v9.65Z"/></svg>
+          </>
         ) : (
           <div
             className="thumb-wrapper"

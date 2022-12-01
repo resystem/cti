@@ -18,7 +18,6 @@
   top: 0px;
   left: 50px;
   z-index: 0;
-  cursor: pointer;
 }
 
 .tile.__9 > .illustration.__2 {
@@ -28,7 +27,6 @@
   top: -120px;
   left: 10px;
   z-index: 0;
-  cursor: pointer;
 }
 
 /* gifs */
@@ -39,8 +37,6 @@
   position: absolute;
   bottom: 23%;
   right: 35%;
-
-  cursor: pointer;
 }
 
 /* videos */

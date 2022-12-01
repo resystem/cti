@@ -83,7 +83,9 @@ const AboutText = ({ language, onClose }) => {
           e.stopPropagation();
         }}
       >
-        {texts[language]}
+        <div className="text">
+          {texts[language]}
+        </div>
 
         <footer>
           <svg
@@ -93,7 +95,7 @@ const AboutText = ({ language, onClose }) => {
               if (isBottom) text.current.scrollTop = -100;
               else text.current.scrollTop += 100;
 
-              const isB = text.current.scrollTop + text.current.clientHeight == text.current.scrollHeight
+              const isB = text.current.scrollTop + text.current.clientHeight >= text.current.scrollHeight - 50
               setIsBottom(isB);
             }}
             style={{ transform: isBottom ? 'rotate(180deg)' : 'rotate(0deg)', transitionDuration: '200ms' }}

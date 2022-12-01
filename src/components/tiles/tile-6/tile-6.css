@@ -20,8 +20,6 @@
   top: -100px;
   right: -100px;
   z-index: 1;
-
-  cursor: pointer;
 }
 
 .tile.__6 > .illustration.__2 {
@@ -31,8 +29,6 @@
   top: 20%;
   left: -11%;
   z-index: 1;
-
-  cursor: pointer;
 }
 
 .tile.__6 > .illustration.__3 {
@@ -41,6 +37,4 @@
   position: absolute;
   bottom: 10px;
   left: 0;
-
-  cursor: pointer;
 }

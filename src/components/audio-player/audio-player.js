@@ -22,6 +22,14 @@ const AudioPlayer = ({ audio, setAudio }) => {
     };
   }, []);
 
+  useEffect(() => {
+    if (element) {
+      element.pause()
+      element.currentTime = 0;
+      element.src = audio.src;
+      element.play();
+    }
+  }, [audio]);
 
   return (
     <div className="audio-player-wrapper">
@@ -55,7 +63,7 @@ const AudioPlayer = ({ audio, setAudio }) => {
         
         <input
           type="range"
-          value={element ? currentTime / element.duration * 100 : 0}
+          value={element?.duration && currentTime ? currentTime / element.duration * 100 : 0}
           min={0}
           max={100}
         />

@@ -13,8 +13,6 @@
   position: absolute;
   top: 220px;
   right: 30px;
-
-  cursor: pointer;
 }
 
 .tile.__2 > .illustration.__2 {
@@ -24,8 +22,6 @@
   bottom: -100px;
   left: 180px;
   z-index: 1;
-
-  cursor: pointer;
 }
 
 .tile.__2 > .illustration.__3 {
@@ -35,8 +31,6 @@
   bottom: 150px;
   left: 55%;
   z-index: 1;
-
-  cursor: pointer;
 }
 
 /* gifs */
@@ -47,8 +41,6 @@
   position: absolute;
   top: 600px;
   right: 150px;
-
-  cursor: pointer;
 }
 
 .tile.__2 > .gif.__2 {
@@ -57,8 +49,6 @@
   position: absolute;
   bottom : 0;
   left: calc(35% - 275px);
-
-  cursor: pointer;
 }
 
 /* videos */

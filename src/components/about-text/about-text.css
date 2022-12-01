@@ -22,11 +22,22 @@
   overflow: auto;
   background-color: #ffffff;
 
-  padding: 32px;
-
   border-radius: 8px;
 
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+
+/* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.about-text::-webkit-scrollbar {
+  display: none;
+}
+
+.about-text .text {
+  padding: 32px;
 }
 
 .about-text p {
@@ -52,7 +63,7 @@
   text-align: center;
 
   left: 0;
-  bottom: -24px;
+  bottom: 0;
 }
 
 .about-text footer svg {

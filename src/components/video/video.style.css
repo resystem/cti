@@ -7,6 +7,58 @@
   background-color: #000000;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  } 
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.video-wrapper > figure {
+  width: 40px;
+  height: 40px;
+
+  animation-duration: 2s;
+  background-color: yellow;
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 18px);
+
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+
+  z-index: 2;
+}
+
+.video-wrapper.synopsis > figure {
+  top: calc(50% - 30px);
+  left: calc(50% - 18px);
+}
+
+.video-wrapper .fullscreen-button {
+  display: none;
+
+  position: absolute;
+  z-index: 2;
+
+  right: 4px;
+  bottom: 12px;
+
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.video-wrapper.synopsis .fullscreen-button {
+  bottom: 48px;
+}
+
+.video-wrapper:hover .fullscreen-button {
+  display: block;
+} 
+
 .video-wrapper > .thumb-wrapper {
   display: flex;
   align-items: center;

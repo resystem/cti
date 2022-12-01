@@ -22,13 +22,24 @@
   overflow: auto;
   background-color: #ffffff;
 
-  padding: 32px;
-  padding-bottom: 0;
-
   border-radius: 8px;
 
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+
+/* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.partners-text::-webkit-scrollbar {
+  display: none;
+}
+
+.partners-text .text {
+  padding: 16px;
+}
+
 
 .partners-text h2 {
   font-size: 16px;
@@ -61,7 +72,7 @@
   text-align: center;
 
   left: 0;
-  bottom: 0px;
+  bottom: 0;
 }
 
 .partners-text footer svg {
