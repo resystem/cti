@@ -22,7 +22,7 @@ const Tile1 = ({ state, dispatch }) => (
     <VideoWrapper
       id="__1"
       video={state.video}
-      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-1/film-thumbnail/filme+1_Nhemongarai+BATISMO+DA+ALMA_pb.png"
+      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/frames/filme+1_Nhemongarai+BATISMO+DA+ALMA_pb.png.png"
       src={video1[state.language]}
       setVideo={(data) => {
         dispatch({
@@ -37,8 +37,9 @@ const Tile1 = ({ state, dispatch }) => (
         })
       }}
       synopsis={{
-        title: 'NHE‘EN-MONGARAI',
+        title: 'Nhe\‘en-mongarai / Batismo da alma',
         subtitle: 'Batismo da alma',
+        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/audios/sinopse+filme+1_Nhemongarai+BATISMO+DA+ALMA.wav',
       }}
       author={{
         name: 'Alberto Alvares',

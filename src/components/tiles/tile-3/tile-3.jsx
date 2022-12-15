@@ -22,7 +22,7 @@ const Tile3 = ({ state, dispatch }) => (
     <VideoWrapper
       id="__4"
       video={state.video}
-      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/film-thumbnail/filme5_Ayvu_Nhexyro_pb.png"
+      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/frames/filme+5_Ayvu+Nhexyro_pb.png.png"
       src={video1[state.language]}
       setVideo={(data) => {
         dispatch({
@@ -37,13 +37,13 @@ const Tile3 = ({ state, dispatch }) => (
         })
       }}
       synopsis={{
-        title: 'AYVU NHEXYRÕ',
+        title: 'Ayvu Nhexyrõ',
         subtitle: '',
         src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/sinopse+filme+5_Ayvu+Nhexyro.wav'
       }}
       author={{
         name: 'Werá Alexandre',
-        place: '',
+        place: 'Tekoa Ara Poty - Chapecó_Paraná',
         src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-3/biografia+filme+5_Ayvu+Nhexyro.wav'
       }}
     />

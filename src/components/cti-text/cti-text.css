@@ -73,9 +73,11 @@
 
   left: 0;
   bottom: 0;
+
+  user-select: none;
 }
 
-.partners-text footer svg {
+.partners-text footer img {
   position: relative;
   top: 0px;
 

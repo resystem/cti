@@ -18,7 +18,7 @@ const Tile5 = ({ state, dispatch }) => (
     <VideoWrapper
       id="__7"
       video={state.video}
-      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-5/film-thumbnail/filme2_AVA_MOCOI_pb.png"
+      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/frames/filme+2_AVA+MOCOI_pb.png.png"
       src={video1[state.language]}
       setVideo={(data) => {
         dispatch({
@@ -33,12 +33,12 @@ const Tile5 = ({ state, dispatch }) => (
         })
       }}
       synopsis={{
-        title: 'AVA MOCOI',
+        title: 'Ava Mocoi - Os gêmeos',
         subtitle: '',
       }}
       author={{
-        name: 'Centro de Trabalho Indigenista',
-        place: '',
+        name: 'Vinicius Toro / Luiza Calagian',
+        place: 'Tekoha Poha Renda - Terra Indígena Guasu Guavirá - Município de Guaíra - Paraná',
       }}
     />
 

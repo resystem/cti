@@ -83,7 +83,7 @@ const CtiText = ({ language, onClose }) => {
         </div>
 
         <footer>
-          <svg
+          <img 
             onClick={() => {
               if (!text?.current) return;
 
@@ -94,11 +94,8 @@ const CtiText = ({ language, onClose }) => {
               setIsBottom(isB);
             }}
             style={{ transform: isBottom ? 'rotate(180deg)' : 'rotate(0deg)', transitionDuration: '200ms' }}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24" fill="#68b7b0"
-          >
-            <path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
-          </svg>
+            src="https://cti-assets.s3.us-west-2.amazonaws.com/buttons/setas2.png"
+          />
         </footer>
       </div>
     </div>

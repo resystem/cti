@@ -20,7 +20,7 @@ const Tile10 = ({ state, dispatch }) => (
     <VideoWrapper
       id="__11"
       video={state.video}
-      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-10/film-thumbnail/filme4_AYVU_RAPYTA_pb.png"
+      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/frames/filme+4_AYVU+RAPYTA_colorida.png.png"
       src={video1[state.language]}
       setVideo={(data) => {
         dispatch({
@@ -35,12 +35,12 @@ const Tile10 = ({ state, dispatch }) => (
         })
       }}
       synopsis={{
-        title: 'AYVU RAPYTA',
+        title: 'Ayvu Rapyta / A essência das palavras',
         subtitle: '',
       }}
       author={{
         name: 'Coletivo Mbya de cinema',
-        place: '',
+        place: 'Aldeia Koenju - Terra Indígena Inhacapetum - São Miguel das Missões- RS',
         src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-10/biografia+filme+4_AYVU+RAPYTA.wav'
       }}
     />

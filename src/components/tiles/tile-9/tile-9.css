@@ -32,10 +32,10 @@
 /* gifs */
 
 .tile.__9 > .photo.__1 {
-  width: 150px;
+  width: 700px;
   
   position: absolute;
-  bottom: 23%;
+  bottom: 25%;
   right: 35%;
 }
 
@@ -53,14 +53,14 @@
 
 .tile.__9 > .partners-button-wrapper {
   position: absolute;
-  bottom: 20%;
-  right: 25%;
+  bottom: 19%;
+  right: 21%;
 }
 
 .tile.__9 > .partners-button-wrapper > button.partners-button {
   position: relative;
   text-align: left;
-  width: 100px;
+  width: 140px;
 
   background-color: transparent;
   border: none;

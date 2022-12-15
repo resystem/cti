@@ -26,6 +26,9 @@ const Tile8 = ({ state, dispatch }) => (
       }}
     />
 
+<img draggable="false" className="photo __2" src="https://cti-assets.s3.us-west-2.amazonaws.com/gifs/9.gif" />    
+
+
     <div className="download-button-wrapper button-hover">
       <button
         className="download-button"

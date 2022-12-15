@@ -21,6 +21,14 @@
   left: 30px;
 }
 
+.tile.__8 > .photo.__2 {
+  z-index: 4;
+  width: 450px;
+  position: absolute;
+  bottom: -16%;
+  right: 40%;
+}
+
 /* illustrations */
 
 .tile.__8 > .illustration.__1 {

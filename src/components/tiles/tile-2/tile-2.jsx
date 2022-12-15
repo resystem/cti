@@ -17,7 +17,7 @@ const Tile2 = ({ state, dispatch }) => (
     <VideoWrapper
       id="__3"
       video={state.video}
-      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/film-thumbnail/thumb-filme-3-Conselhos-Mbya-Guarani_pb.png"
+      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/frames/filme+3_Conselhos+Mbya+Guarani_pb.png.png"
       src={video1[state.language]}
       setVideo={(data) => {
         dispatch({
@@ -38,7 +38,7 @@ const Tile2 = ({ state, dispatch }) => (
       }}
       author={{
         name: 'Alexandre Kuaray',
-        place: '',
+        place: 'Tekoa Yyakã porã- Terra Indígena Boa Vista do Sertão do Promirim - Ubatuba-SP',
         src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-2/biografia+filme+3_Conselhos+Mbya+Guarani.wav'
       }}
     />

@@ -18,7 +18,7 @@ const Tile4 = ({ state, dispatch }) => (
     <VideoWrapper
       id="__5"
       video={state.video}
-      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/film-thumbnail/filme6_MoaKaaguy_pb.png"
+      thumbnail="https://cti-assets.s3.us-west-2.amazonaws.com/frames/filme+6_Moa+Kaaguy_pb.png.png"
       src={video1[state.language]}
       setVideo={(data) => {
         dispatch({
@@ -33,14 +33,14 @@ const Tile4 = ({ state, dispatch }) => (
         })
       }}
       synopsis={{
-        title: 'MOÃ KA A GUY',
+        title: 'Moã ka a guy',
         subtitle: '',
         src: 'https://cti-assets.s3.us-west-2.amazonaws.com/tile-4/sinopse+filme+6_Moa+Kaaguy.wav',
       }}
       author={{
         name: 'Carlos Papa',
-        place: '',
-        src: ''
+        place: 'Tekoa Rio Silveira - Terra Indígena Ribeirão Silveira - Bertioga, SP',
+        src: 'https://cti-assets.s3.us-west-2.amazonaws.com/audios/biografia+filme+6_CARLOS+PAPA.wav'
       }}
     />
 
